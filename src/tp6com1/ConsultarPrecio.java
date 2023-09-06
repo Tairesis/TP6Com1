@@ -40,6 +40,9 @@ public class ConsultarPrecio extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTablePrecio = new javax.swing.JTable();
 
+        setClosable(true);
+        setMaximizable(true);
+
         jPanel1.setBackground(new java.awt.Color(255, 153, 0));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 

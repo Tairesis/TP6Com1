@@ -46,7 +46,6 @@ private DefaultTableModel modelo= new DefaultTableModel(){
 
         setBackground(new java.awt.Color(255, 255, 255));
         setClosable(true);
-        setIconifiable(true);
         setMaximizable(true);
         setTitle("Listado Por Nombre");
         setMinimumSize(new java.awt.Dimension(110, 50));
