@@ -72,11 +72,11 @@ public class MenuGeneral extends javax.swing.JFrame {
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 621, Short.MAX_VALUE)
+            .addGap(0, 615, Short.MAX_VALUE)
         );
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
-        jMenuBar1.setBorder(null);
+        jMenuBar1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jMenu1.setBackground(new java.awt.Color(255, 255, 255));
         jMenu1.setForeground(new java.awt.Color(51, 51, 51));
@@ -84,6 +84,7 @@ public class MenuGeneral extends javax.swing.JFrame {
 
         jmiProductos.setBackground(new java.awt.Color(255, 255, 255));
         jmiProductos.setForeground(new java.awt.Color(51, 51, 51));
+        jmiProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tp6com1/imagen/senalador.fw.png"))); // NOI18N
         jmiProductos.setText("Productos");
         jmiProductos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,6 +101,7 @@ public class MenuGeneral extends javax.swing.JFrame {
 
         jmiRubro.setBackground(new java.awt.Color(255, 255, 255));
         jmiRubro.setForeground(new java.awt.Color(51, 51, 51));
+        jmiRubro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tp6com1/imagen/senalador.fw.png"))); // NOI18N
         jmiRubro.setText("Por Rubro");
         jmiRubro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,6 +112,7 @@ public class MenuGeneral extends javax.swing.JFrame {
 
         jmiNombre.setBackground(new java.awt.Color(255, 255, 255));
         jmiNombre.setForeground(new java.awt.Color(51, 51, 51));
+        jmiNombre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tp6com1/imagen/senalador.fw.png"))); // NOI18N
         jmiNombre.setText("Por Nombre");
         jmiNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,6 +123,7 @@ public class MenuGeneral extends javax.swing.JFrame {
 
         jmiPrecio.setBackground(new java.awt.Color(255, 255, 255));
         jmiPrecio.setForeground(new java.awt.Color(51, 51, 51));
+        jmiPrecio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tp6com1/imagen/senalador.fw.png"))); // NOI18N
         jmiPrecio.setText("Por Precio");
         jmiPrecio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
