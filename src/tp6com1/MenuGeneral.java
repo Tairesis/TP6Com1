@@ -8,6 +8,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.util.TreeSet;
 import javax.swing.ImageIcon;
+import tp6com1.modelo.Categoria;
 import tp6com1.modelo.Producto;
 
 /**
@@ -16,11 +17,19 @@ import tp6com1.modelo.Producto;
  */
 public class MenuGeneral extends javax.swing.JFrame {
   public static TreeSet<Producto> productos=new TreeSet<>();
+       
     /**
      * Creates new form MenuGeneral
      */
     public MenuGeneral() {
         initComponents();
+        
+         productos.add(new Producto(1,"Arroz",100.9,50,Categoria.COMESTIBLE));
+         productos.add(new Producto(2,"Arvejas",120.9,60,Categoria.COMESTIBLE));
+         productos.add(new Producto(3,"Aros de cebolla",180,90,Categoria.COMESTIBLE));
+         productos.add(new Producto(4,"Estropajo",300,20,Categoria.LIMPIEZA));
+         productos.add(new Producto(5,"Perfume Dior",1450,10,Categoria.PERFUMERIA));
+         productos.add(new Producto(6,"Cartera Channel",50000,3,Categoria.PERFUMERIA));
     }
 
     /**
@@ -225,4 +234,5 @@ public class MenuGeneral extends javax.swing.JFrame {
     private javax.swing.JMenuItem jmiProductos;
     private javax.swing.JMenuItem jmiRubro;
     // End of variables declaration//GEN-END:variables
+
 }
