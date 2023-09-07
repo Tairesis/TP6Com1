@@ -17,6 +17,7 @@ import tp6com1.modelo.Producto;
  */
 public class MenuGeneral extends javax.swing.JFrame {
   public static TreeSet<Producto> productos=new TreeSet<>();
+  
        
     /**
      * Creates new form MenuGeneral

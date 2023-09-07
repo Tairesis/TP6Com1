@@ -44,6 +44,7 @@ public class GestiondeProductos extends javax.swing.JInternalFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         setClosable(true);
         setPreferredSize(new java.awt.Dimension(630, 423));
+        getContentPane().setLayout(null);
 
         jBNuevo.setBackground(new java.awt.Color(255, 255, 255));
         jBNuevo.setText("Nuevo");
@@ -52,6 +53,8 @@ public class GestiondeProductos extends javax.swing.JInternalFrame {
                 jBNuevoActionPerformed(evt);
             }
         });
+        getContentPane().add(jBNuevo);
+        jBNuevo.setBounds(74, 330, 65, 32);
 
         jBGuardar.setBackground(new java.awt.Color(255, 255, 255));
         jBGuardar.setText("Guardar");
@@ -60,6 +63,8 @@ public class GestiondeProductos extends javax.swing.JInternalFrame {
                 jBGuardarActionPerformed(evt);
             }
         });
+        getContentPane().add(jBGuardar);
+        jBGuardar.setBounds(157, 330, 76, 32);
 
         jBEliminar.setBackground(new java.awt.Color(255, 255, 255));
         jBEliminar.setText("Eliminar");
@@ -69,6 +74,8 @@ public class GestiondeProductos extends javax.swing.JInternalFrame {
                 jBEliminarActionPerformed(evt);
             }
         });
+        getContentPane().add(jBEliminar);
+        jBEliminar.setBounds(251, 330, 76, 32);
 
         jBSalir.setBackground(new java.awt.Color(255, 255, 255));
         jBSalir.setText("Salir");
@@ -77,6 +84,8 @@ public class GestiondeProductos extends javax.swing.JInternalFrame {
                 jBSalirActionPerformed(evt);
             }
         });
+        getContentPane().add(jBSalir);
+        jBSalir.setBounds(339, 330, 56, 32);
 
         jPanel1.setBackground(new java.awt.Color(255, 153, 0));
 
@@ -91,7 +100,7 @@ public class GestiondeProductos extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(131, 131, 131)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(307, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -101,8 +110,13 @@ public class GestiondeProductos extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 628, 34);
+
         jSeparator1.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(255, 51, 51));
+        getContentPane().add(jSeparator1);
+        jSeparator1.setBounds(0, 317, 628, 10);
 
         jPanelCompletar.setBackground(new java.awt.Color(255, 255, 255));
         jPanelCompletar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 0)));
@@ -189,44 +203,8 @@ public class GestiondeProductos extends javax.swing.JInternalFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jSeparator1)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addComponent(jBNuevo)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBGuardar)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBEliminar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jBSalir))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(jPanelCompletar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 67, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
-                .addComponent(jPanelCompletar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(3, 3, 3)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBNuevo)
-                    .addComponent(jBGuardar)
-                    .addComponent(jBEliminar)
-                    .addComponent(jBSalir))
-                .addContainerGap(39, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanelCompletar);
+        jPanelCompletar.setBounds(62, 78, 346, 210);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
